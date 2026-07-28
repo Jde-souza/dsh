@@ -3,258 +3,294 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="DSH Producción Técnica Audiovisual en Uruguay. Sonido, Iluminación, Pantallas LED y Multiemdia para congresos, hoteles y shows en vivo.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="asset/css/responcive.css">
     <link rel="shortcut icon" href="asset/img/DSH_LOGOS/Logo Files/For Web/Favicons/Browser.png">
-    <title>DSH Producción técnica y artistica de eventos en Uruguay</title>
+    
+    <title>DSH | Producción Técnica y Artística en Uruguay</title>
 </head>
 
-<body id="Inicio">
-    <header class="container">
-        <nav class="nav-menu">
-            <a href="#Inicio">
-                <img class="logo-nav" src="asset/img/DSH_LOGOS/Logo Files/For Web/png/Color logo - no background.png"
-                    alt="Logo DSH color azul"></a>
-            <ul class="nav-menu--ul">
-                <li><a class="nav-a" href="#Inicio">Inicio</a></li>
-                <li><a class="nav-a" href="#presentación">Presentación</a></li>
-                <li><a class="nav-a" href="#servicios">Servicios</a></li>
-                <li><a class="nav-a" href="#Contactanos">Contactanos</a></li>
-            </ul>
-        </nav>
-        <img src="asset/img/DSH_LOGOS/Logo Files/For Web/svg/White logo - no background.svg" class="logo_dsh"
-            alt="Logo dsh">
-        <p class="dsh--p">Producción técnica y artistica de eventos en Uruguay</p>
-        <div class="dsh--button">
-            <a href="#Contactanos">Solicita una reunión</a>
+<body id="inicio">
+    <!-- Navbar (Glassmorphism) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-brand">
+                <img src="asset/img/DSH_LOGOS/Logo Files/For Web/svg/White logo - no background.svg" alt="DSH Logo" class="brand-logo">
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#presentacion" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#clientes" class="nav-link">Clientes</a>
+            </nav>
+
+            <a href="#contacto" class="btn-primary-nav">Contacto</a>
         </div>
     </header>
 
-    <!--SECCION PRINSIPAL-->
-
-    <main class="main">
-        <section id="presentación" class="main--presentacion">
-            <div class="main--div">
-                <article class="main--article">
-                    <h3 class="article--title">Presentación</h3>
-                    <p class="article--p">DSH es una empresa dedicada a ofrecer servicios de sonido, iluminación, y
-                        multimedia de alta
-                        calidad, con un compromiso
-                        con el medio ambiente. Nuestro equipamiento es moderno y eficiente, lo que nos permite ahorrar
-                        energía y reducir las
-                        emisiones de carbono. Somos una empresa profesional, responsable, y creativa, que se adapta a
-                        las
-                        necesidades de cada
-                        cliente.</p>
-                    <p class="article--p">
-                        Nos especializamos en la producción técnica de congresos y conferencias, realizados de forma
-                        presencial o a distancia. Contamos con experiencia en la sonorización e iluminación de
-                        espectáculos
-                        musicales desarrollados por artistas
-                        emergentes y de reconocimiento nacional, e internacional.
-                        Además, te ofrecemos un servicio integral para la realización de eventos sociales y
-                        corporativos.
-                    </p>
-                </article>
-        </section>
-
-        <!--CAJAS DE CARACTERISTICAS DEL SERVICIO-->
-
-        <section class="servicios-cajas">
-            <h3 id="servicios" class="caracteristicas--title">Servicios</h3>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">Pantalla</h4>
-                <p class="caracteristicas-p">
-                    Sabemos que vivimos en una época donde la comunicación visual es esencial para transmitir tu
-                    mensaje,
-                    por eso
-                    te ofrecemos una variedad de soluciones para mostrar tu contenido de forma impactante, desde
-                    pantallas
-                    LED, proyectores,
-                    hasta pantallas de led gigantes, que se adaptan a cualquier espacio interior o exterior, según
-                    tu
-                    requerimiento.
-                </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Video Background (Descomentar cuando tengas un video) -->
+        <!-- <video autoplay loop muted playsinline class="hero-video"><source src="asset/video/tu-video-dsh.mp4" type="video/mp4"></video> -->
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Conectando tecnología y emoción</h1>
+            <p class="hero-subtitle">Producción técnica y artística integral en Uruguay. Elevamos el estándar de tus eventos con sonido, iluminación y pantallas de última generación.</p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn-primary">Solicitar Presupuesto</a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
             </div>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">Fotografía y filmación</h4>
-                <p class="caracteristicas-p">
-                    Sabemos que ese día tan esperado es muy importante para ti y que quieres guardar un recuerdo
-                    imborrable de lo que vivirás. Por eso, te ofrecemos la oportunidad de crear un registro
-                    fotográfico o
-                    audiovisual de tu
-                    fiesta, evento o show, para que puedas revivir esos momentos únicos y especiales que no se
-                    repetirán. No
-                    dejes pasar
-                    esta ocasión y confía en nosotros para capturar la magia de tu celebración.
-                </p>
-            </div>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">iluminación</h4>
-                <p class="caracteristicas-p">
-                    La iluminación es una herramienta poderosa para crear atmósferas, transmitir emociones y captar
-                    la
-                    atención
-                    del público. Por eso, en nuestra empresa nos dedicamos a diseñar proyectos de iluminación que se
-                    adapten
-                    a las
-                    necesidades y expectativas de cada cliente, teniendo en cuenta el propósito y el mensaje de la
-                    producción acordada.
-                    Nuestro equipo de profesionales cuenta con amplia experiencia y creatividad para lograr efectos
-                    visuales
-                    impactantes y
-                    originales.
-                </p>
-            </div>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">Sonido</h4>
-                <p class="caracteristicas-p">
-                    El sonido es un factor clave para el éxito de cualquier evento, ya sea que quieras proyectar tu
-                    voz o la
-                    de un
-                    grupo musical, el sonido puede hacer la diferencia entre un mensaje claro y uno confuso. Por
-                    eso, te
-                    brindamos el mejor
-                    servicio de sonido, con técnicos expertos que te garantizan una experiencia de calidad.
-                </p>
-            </div>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">Asesoramiento técnico</h4>
-                <p class="caracteristicas-p">
-                    Te acompañamos en todo el proceso de creación de tu proyecto, desde la idea hasta el resultado
-                    final. Te ofrecemos un servicio personalizado y profesional, con el que podrás contar con
-                    nuestra
-                    experiencia y
-                    conocimientos técnicos. Queremos que tu proyecto sea un éxito, por eso nos adaptamos a tus
-                    necesidades y
-                    te damos la
-                    mejor solución para cada situación. Trabajamos en equipo contigo, escuchando tus propuestas y
-                    sugerencias, y respetando
-                    tu visión y objetivos.
-                </p>
-            </div>
-            <div class="caracteristicas-item">
-                <h4 class="caracteristicas-h4">Instalación de equipamiento de bajo consumo eléctrico</h4>
-                <p class="caracteristicas-p">
-                    Nuestro equipo de sonido, iluminación y pantallas es de primera
-                    calidad y tiene un rendimiento energético óptimo, lo que nos permite ahorrar energía en cada
-                    evento.
-                    Además, nos
-                    preocupamos por el medio ambiente y por respetar el lugar donde realizamos nuestro trabajo, así
-                    que
-                    siempre buscamos
-                    usar la energía de forma eficiente y responsable, para hacer nuestra parte por el planeta.
-                </p>
-            </div>
-        </section>
-
-        <div class="clearfix"></div>
-
-        <section>
-            <div class="main--div">
-                <article class="main--article">
-                    <h3 class="article--title">Soluciones técnicas y logísticas para hoteles y centros de
-                        convenciones</h3>
-                    <p class="article--p">En el mundo de los eventos, la calidad del sonido, la iluminación y el
-                        contenido
-                        multimedia es
-                        esencial para crear una
-                        experiencia memorable y satisfactoria para los asistentes. Por eso, ofrecemos soluciones
-                        técnicas y
-                        logísticas en audio,
-                        iluminación y multimedia para hoteles y centros de convenciones, adaptándonos a las necesidades
-                        y
-                        expectativas de cada
-                        cliente.</p><br>
-                    <p class="article--p">Contamos con un equipo de profesionales cualificados y experimentados, que se
-                        encargan de diseñar,
-                        instalar y operar los
-                        equipos más avanzados y adecuados para cada tipo de evento. Ya sea una conferencia, una
-                        presentación, una gala o un
-                        concierto, garantizamos un resultado óptimo y eficiente, con el respaldo de las mejores marcas
-                        del
-                        mercado.</p>
-                </article>
-            </div>
-            <div class="main--div">
-                <article class="main--article">
-                    <h3 class="article--title">Servicio integral para eventos sociales y empresariales</h3>
-                    <p class="article--p">En DSH ofrecemos un servicio integral de sonido, iluminación y multimedia para
-                        eventos sociales y
-                        empresariales.
-                        Contamos con equipos de última generación, personal capacitado y una amplia experiencia en el
-                        sector. Creamos propuestas
-                        a medida cubriendo las necesidades de cada cliente, garantizando un resultado de calidad y
-                        satisfacción. Ya sea que se
-                        trate de una boda, un cumpleaños, una conferencia o una presentación, en DSH creamos un ambiente
-                        único para su evento.</p>
-                </article>
-            </div>
-            <div class="main--div">
-                <article class="main--article">
-                    <h3 class="article--title">Sonido, iluminación y multimedia para solistas, bandas y espectáculos
-                    </h3>
-                    <p class="article--p">¿Estás buscando una empresa que te ofrezca los mejores servicios de sonido,
-                        iluminación y multimedia
-                        para tus eventos?
-                        En DSH, somos expertos en crear ambientes únicos y espectaculares para solistas, bandas y
-                        espectáculos de todos los
-                        niveles.</p>
-                    <p class="article--p">No importa si quieres organizar un concierto íntimo o una gran fiesta,
-                        nosotros
-                        nos encargamos de
-                        todo.</p>
-                </article>
-
-                <div class="clearfix"></div>
-
-            </div>
-        </section>
-
-        <div class="clearfix"></div>
-
-        <!--MARCAS CON LAS QUE TRABAJAMOS-->
-
-        <div class="marcas">
-            <h3 class="marcas--title">Estuvimos en</h3>
-            <div class="img--antel"><img src="asset/img/antel recorte 1.png" alt="antel"></div>
-            <div class="img--im"><img src="asset/img/im.jpeg" alt="Intendencia de Montevideo"></div>
-            <div class="img--sodre"><img src="asset/img/logo-sodre-2020-bl-2x.png" alt="Sodre"></div>
-            <div class="img--Radisson"><img src="asset/img/Radisson-Logo-1909.png" alt="Hotel Radisson"></div>
         </div>
-    </main>
-    <div class="clearfix"></div>
-
-    <!--FORMULARIO DE CONTACTO-->
-
-    <section id="Contactanos" class="sec-form">
-        <form action="https://formsubmit.co/jdsmuy@gmail.com" method="POST">
-            <h3 class="form-title">Contactanos</h3>
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="bisnes" placeholder="Empresa opcional">
-                <input type="tel" name="phone" placeholder="Número">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="messsage" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                <input class="btn-form" type="submit" value="Enviar">
-
-                <input type="hidden" name="_nex" value="">
-                <input type="hidden" name="_captcha" value="false">
-            </div>
-        </form>
+        <div class="hero-scroll-indicator">
+            <div class="mouse"></div>
+        </div>
     </section>
-    </main>
-    <footer>
-        <p>&copy; DSH 2024 <br> Todos los derechos reservados</p> <br>
 
-        <!--BOTON WHATSAPP-->
+    <!-- About Section -->
+    <section id="presentacion" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quiénes Somos</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-card fade-in-up">
+                    <div class="about-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Innovación y Calidad</h3>
+                    <p>DSH es una empresa dedicada a ofrecer servicios de sonido, iluminación, y multimedia de alta calidad. Nuestro equipamiento es moderno y eficiente, permitiendo ahorrar energía y reducir las emisiones de carbono.</p>
+                </div>
 
-        <a class="btn-whatsapp" href=https://api.whatsapp.com/send/?phone=59897777878>
-            <img class="img-whatsapp" src="asset/img/whatsapp azul.png" alt="Envíanos un Whatsapp"></a>
+                <div class="about-card glass-card fade-in-up delay-1">
+                    <div class="about-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Versatilidad Total</h3>
+                    <p>Nos especializamos en la producción técnica de congresos y conferencias. Contamos con experiencia en espectáculos musicales y te ofrecemos un servicio integral para eventos sociales y corporativos.</p>
+                </div>
+
+                <div class="about-card glass-card fade-in-up delay-2">
+                    <div class="about-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <h3>Inclusión y Accesibilidad</h3>
+                    <p>DSH es una empresa fundada por personas con discapacidad visual. Tenemos un alto enfoque en accesibilidad, por lo que todo nuestro equipamiento y flujo de trabajo está adaptado para ser 100% compatible con lectores de pantalla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services-section dark-bg">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="section-divider center"></div>
+                <p class="section-subtitle">Tecnología de vanguardia para crear experiencias inmersivas inolvidables.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h4>Pantallas Visuales</h4>
+                    <p>La comunicación visual es esencial. Te ofrecemos pantallas LED, proyectores y pantallas gigantes que se adaptan a cualquier espacio interior o exterior.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card fade-in-up delay-1">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </div>
+                    <h4>Iluminación</h4>
+                    <p>Diseñamos proyectos de iluminación que se adaptan a las necesidades y expectativas, logrando efectos visuales impactantes y originales.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card fade-in-up delay-2">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-speaker"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg>
+                    </div>
+                    <h4>Sonido Profesional</h4>
+                    <p>El sonido puede hacer la diferencia entre un mensaje claro y uno confuso. Te brindamos el mejor servicio de sonido con técnicos expertos.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                    </div>
+                    <h4>Fotografía y Filmación</h4>
+                    <p>Creamos un registro fotográfico o audiovisual de tu fiesta, evento o show, para que puedas revivir esos momentos únicos.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card fade-in-up delay-1">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h4>Bajo Consumo Eléctrico</h4>
+                    <p>Instalamos equipamiento de primera calidad con rendimiento energético óptimo, cuidando el medio ambiente.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card fade-in-up delay-2">
+                    <div class="service-icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h4>Asesoramiento Técnico</h4>
+                    <p>Te acompañamos en todo el proceso de creación de tu proyecto, desde la idea hasta el resultado final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Section -->
+    <section class="section logistics-section">
+        <div class="container">
+            <div class="logistics-grid">
+                <div class="bento-card fade-in-up" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80');">
+                    <h3 class="accent-title">Hoteles y Centros de Convenciones</h3>
+                    <p>Ofrecemos soluciones técnicas y logísticas en audio, iluminación y multimedia. Nuestro equipo de profesionales diseña, instala y opera los equipos más avanzados para conferencias y presentaciones.</p>
+                </div>
+                <div class="bento-card fade-in-up delay-1" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80');">
+                    <h3 class="accent-title">Eventos Sociales y Empresariales</h3>
+                    <p>Servicio integral con equipos de última generación. Creamos propuestas a medida cubriendo las necesidades de cada cliente, ya sea una boda, cumpleaños o gala empresarial.</p>
+                </div>
+                <div class="bento-card fade-in-up delay-2" style="background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1000&q=80');">
+                    <h3 class="accent-title">Bandas y Espectáculos</h3>
+                    <p>Somos expertos en crear ambientes únicos y espectaculares para solistas y bandas. Desde un concierto íntimo hasta una gran fiesta, nosotros nos encargamos de todo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clientes" class="section clients-section dark-bg">
+        <div class="container text-center">
+            <h3 class="clients-title">Han confiado en nosotros</h3>
+            <div class="clients-grid">
+                <img src="asset/img/antel recorte 1.png" alt="Antel" class="client-logo">
+                <img src="asset/img/im.jpeg" alt="Intendencia de Montevideo" class="client-logo rounded">
+                <img src="asset/img/logo-sodre-2020-bl-2x.png" alt="Sodre" class="client-logo">
+                <img src="asset/img/Radisson-Logo-1909.png" alt="Radisson" class="client-logo">
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonial-container fade-in-up">
+                <div class="testimonial-card">
+                    <svg aria-hidden="true" class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <p class="testimonial-text">"El nivel técnico y humano del equipo de DSH es incomparable. Transformaron nuestro evento en una experiencia audiovisual de primer nivel, cuidando cada detalle."</p>
+                    <p class="testimonial-author">- Producción General, Evento Corporativo</p>
+                </div>
+                <div class="testimonial-card">
+                    <svg aria-hidden="true" class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <p class="testimonial-text">"Como músico, el sonido arriba del escenario lo es todo. DSH logró un monitoreo impecable que nos hizo sentir seguros y extremadamente cómodos durante todo el show."</p>
+                    <p class="testimonial-author">- Artista Principal, Espectáculo Musical</p>
+                </div>
+                <div class="testimonial-card">
+                    <svg aria-hidden="true" class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <p class="testimonial-text">"La organización de nuestro congreso fue un éxito rotundo. La tranquilidad y profesionalismo que transmite el equipo técnico nos permitió relajarnos y enfocarnos únicamente en nuestros oradores e invitados."</p>
+                    <p class="testimonial-author">- Comité Organizador, Congreso Internacional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section contact-section">
+        <div class="container contact-container">
+            <div class="contact-info fade-in-up">
+                <h2>Cuéntanos tu idea</h2>
+                <p>Recibe una propuesta técnica y un presupuesto a medida en menos de 24 horas.</p>
+                <div class="contact-details">
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> <a href="mailto:dsheventos@gmail.com">dsheventos@gmail.com</a></p>
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg> <a href="tel:+59897777878">+598 97 777 878</a></p>
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Montevideo, Uruguay</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper glass-card fade-in-up delay-1">
+                <form action="https://formsubmit.co/dsheventos@gmail.com" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre completo" aria-label="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="bisnes" placeholder="Empresa (Opcional)" aria-label="Empresa (Opcional)">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Teléfono" aria-label="Teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" aria-label="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="messsage" rows="4" placeholder="Cuéntanos sobre tu evento..." aria-label="Mensaje sobre tu evento" required></textarea>
+                    </div>
+                    
+                    <p class="form-legal-disclaimer">Tus datos están protegidos. Al solicitar este presupuesto, aceptas nuestra <a href="legal.html#privacidad">Política de Privacidad</a> y el tratamiento de tus datos bajo la Ley N° 18.331 de Uruguay.</p>
+                    
+                    <input type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn-submit">Obtener Presupuesto Sin Cargo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="asset/img/DSH_LOGOS/Logo Files/For Web/svg/White logo - no background.svg" alt="DSH" class="footer-logo" aria-hidden="true">
+            <p>&copy; 2024 DSH Producción Técnica y Artística. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="legal.html#privacidad">Política de Privacidad</a>
+                <span class="separator">|</span>
+                <a href="legal.html#terminos">Términos y Condiciones</a>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <!-- Floating WhatsApp -->
+    <a href="https://api.whatsapp.com/send/?phone=59897777878" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <img src="asset/img/whatsapp azul.png" alt="Icono de WhatsApp" aria-hidden="true">
+    </a>
+
+    <!-- Main Logic -->
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
+
+        // Navbar blur on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
 </html>
