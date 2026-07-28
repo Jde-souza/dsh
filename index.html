@@ -218,7 +218,7 @@
             </div>
             
             <div class="contact-form-wrapper glass-card fade-in-up delay-1">
-                <form action="https://formsubmit.co/dsheventos@gmail.com" method="POST" class="contact-form">
+                <form id="contact-form" action="https://formsubmit.co/ajax/dsheventos@gmail.com" method="POST" class="contact-form">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Nombre completo" aria-label="Nombre completo" required>
                     </div>
@@ -239,8 +239,14 @@
                     
                     <input type="hidden" name="_next" value="">
                     <input type="hidden" name="_captcha" value="false">
-                    <button type="submit" class="btn-submit">Obtener Presupuesto Sin Cargo</button>
+                    <button type="submit" class="btn-submit" id="btn-submit">Obtener Presupuesto Sin Cargo</button>
                 </form>
+                
+                <div id="form-success" class="form-success fade-in-up" style="display: none; text-align: center; padding: 60px 20px;">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 20px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;">¡Solicitud Recibida!</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Gracias por confiar en DSH. Nuestro equipo está evaluando tu evento y te contactaremos con una propuesta en menos de 24 horas.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -291,6 +297,44 @@
                 nav.classList.remove('scrolled');
             }
         });
+
+        // AJAX Form Submit (Premium UX)
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('form-success');
+        const submitBtn = document.getElementById('btn-submit');
+
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Detener la redirección normal
+                
+                const originalText = submitBtn.innerText;
+                submitBtn.innerText = 'Enviando...';
+                submitBtn.style.opacity = '0.7';
+                submitBtn.style.cursor = 'not-allowed';
+                submitBtn.disabled = true;
+
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        contactForm.style.display = 'none';
+                        successMessage.style.display = 'block';
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                }).catch(error => {
+                    alert('Hubo un problema de conexión al enviar el formulario. Por favor, intenta de nuevo o escríbenos a nuestro WhatsApp.');
+                    submitBtn.innerText = originalText;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer';
+                    submitBtn.disabled = false;
+                });
+            });
+        }
     </script>
 </body>
 </html>
