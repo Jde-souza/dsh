@@ -111,12 +111,11 @@ a {
 .btn-primary-nav {
     background: var(--primary);
     color: white;
-    padding: 10px 24px;
-    border-radius: 50px;
-    font-weight: 800;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition);
 }
 
 .btn-primary-nav:hover {
@@ -192,11 +191,12 @@ a {
     background: var(--primary);
     color: white;
     padding: 16px 32px;
-    border-radius: 50px;
-    font-weight: 800;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
