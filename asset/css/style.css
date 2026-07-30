@@ -939,6 +939,7 @@ a {
 /* -------------------------------------------------------------------------- */
 .blog-hero {
     padding: 150px 0 50px;
+    background: linear-gradient(to bottom, var(--bg-dark), rgba(1, 10, 28, 0.95));
 }
 
 .blog-grid {
