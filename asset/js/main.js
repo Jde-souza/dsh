@@ -26,6 +26,27 @@ const observer = new IntersectionObserver((entries) => {
 // Ensure the DOM is fully loaded before querying elements
 document.addEventListener('DOMContentLoaded', () => {
     
+    // Mobile Menu Logic
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            const isActive = navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', isActive);
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     // Initialize scroll animations
     document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
 
@@ -132,3 +153,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Share functionality for blog posts
+function getArticleUrl() {
+    return window.location.href;
+}
+
+function showShareToast(message) {
+    const toast = document.getElementById('share-toast');
+    if(toast) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+    }
+}
+
+function copyArticleLink() {
+    navigator.clipboard.writeText(getArticleUrl()).then(() => {
+        showShareToast("¡Enlace copiado al portapapeles!");
+    }).catch(() => {
+        showShareToast("Error al copiar el enlace.");
+    });
+}
+
+function copyForInstagram() {
+    navigator.clipboard.writeText(getArticleUrl()).then(() => {
+        showShareToast("¡Copiado! Abre Instagram para pegarlo en tu historia.");
+    }).catch(() => {
+        showShareToast("Error al copiar el enlace.");
+    });
+}
+
+function shareToWhatsApp(e) {
+    e.preventDefault();
+    const url = encodeURIComponent(getArticleUrl());
+    const title = encodeURIComponent(document.title.split('|')[0].trim());
+    window.open(`https://api.whatsapp.com/send?text=Mira este artículo de DSH: ${title}%20-%20${url}`, '_blank');
+}
+
+function shareToLinkedIn(e) {
+    e.preventDefault();
+    const url = encodeURIComponent(getArticleUrl());
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank', 'width=600,height=600');
+}

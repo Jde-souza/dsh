@@ -13,10 +13,39 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="shortcut icon" href="asset/img/DSH_LOGOS/Logo Files/For Web/Favicons/Browser.png">
     
+    <meta name="keywords" content="sonido conferencias, micrófonos eventos, audio corporativo, evitar acoples, DSH Producción">
+    <link rel="canonical" href="https://dsh.uy/blog-sonido-conferencias.html">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dsh.uy/blog-sonido-conferencias.html">
+    <meta property="og:title" content="Cómo lograr un sonido impecable en conferencias">
+    <meta property="og:description" content="La mala calidad de audio puede arruinar la mejor presentación. Descubre las claves técnicas para un sonido claro y profesional.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?auto=format&fit=crop&w=1600&q=80">
+
     <title>Cómo lograr un sonido impecable en conferencias | Blog DSH</title>
+
+    <!-- Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Cómo lograr un sonido impecable en conferencias",
+      "image": "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?auto=format&fit=crop&w=1600&q=80",
+      "author": {
+        "@type": "Organization",
+        "name": "DSH Producción Técnica"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "DSH Producción Técnica"
+      }
+    }
+    </script>
 </head>
 
 <body class="blog-post-page">
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <!-- Navbar -->
     <header class="navbar scrolled">
         <div class="nav-container">
@@ -24,13 +53,20 @@
                 <img src="asset/img/DSH_LOGOS/Logo Files/For Web/svg/White logo - no background.svg" alt="DSH Logo" class="brand-logo">
             </a>
             
+            <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <nav class="nav-links">
                 <a href="index.html#inicio" class="nav-link">Volver al Inicio</a>
-                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="blog.html" class="nav-link active" aria-current="page">Blog</a>
             </nav>
         </div>
     </header>
 
+    <main id="main-content">
     <!-- Post Hero -->
     <header class="blog-post-hero" style="background-image: url('https://images.unsplash.com/photo-1598387993441-a364f854c3e1?auto=format&fit=crop&w=1600&q=80');">
         <div class="container text-center">
@@ -55,6 +91,30 @@
 
         <h2>El Factor Humano</h2>
         <p>Por más avanzada que sea la tecnología, el resultado final depende del ingeniero de sonido. Nuestro equipo en DSH está capacitado para ecualizar quirúrgicamente cada micrófono, adaptándolo al tono de voz de cada disertante en tiempo real, garantizando una transmisión clara tanto para el público presente como para el streaming.</p>
+
+        <!-- Share Component -->
+        <div class="share-container">
+            <span class="share-label">Compartir artículo:</span>
+            <div class="share-buttons">
+                <!-- Copy Link -->
+                <button class="share-btn share-copy" title="Copiar enlace" aria-label="Copiar enlace al artículo" onclick="copyArticleLink()">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+                <!-- WhatsApp -->
+                <a href="#" class="share-btn share-wa" title="Compartir en WhatsApp" aria-label="Compartir en WhatsApp" onclick="shareToWhatsApp(event)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="share-btn share-in" title="Compartir en LinkedIn" aria-label="Compartir en LinkedIn" onclick="shareToLinkedIn(event)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <!-- Instagram -->
+                <button class="share-btn share-ig" title="Copiar para Instagram" aria-label="Copiar para compartir en Instagram" onclick="copyForInstagram()">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </button>
+            </div>
+            <div id="share-toast" class="share-toast">¡Enlace copiado al portapapeles!</div>
+        </div>
 
         <a href="blog.html" class="back-to-blog">
             <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
@@ -96,26 +156,34 @@
                     method="POST" class="contact-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Nombre o Productora" aria-label="Nombre completo o productora"
-                                required>
+                            <label for="contact-name" class="sr-only">Nombre o Productora</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Nombre o Productora"
+                                aria-label="Nombre completo o productora" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email corporativo / personal" aria-label="Correo electrónico" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="WhatsApp / Teléfono" aria-label="Teléfono" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Fecha del Evento" aria-label="Fecha del evento">
+                            <label for="contact-email" class="sr-only">Email corporativo / personal</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Email corporativo / personal"
+                                aria-label="Correo electrónico" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <select name="location_type" aria-label="Tipo de locación">
+                            <label for="contact-phone" class="sr-only">WhatsApp / Teléfono</label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="WhatsApp / Teléfono" aria-label="Teléfono"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-date" class="sr-only">Fecha del Evento</label>
+                            <input type="text" id="contact-date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date"
+                                placeholder="Fecha del Evento" aria-label="Fecha del evento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-location" class="sr-only">Tipo de Locación</label>
+                            <select id="contact-location" name="location_type" aria-label="Tipo de locación">
                                 <option value="" disabled selected>Tipo de Locación</option>
                                 <option value="Hotel/Salon">Hotel / Salón de Fiestas</option>
                                 <option value="Exterior">Exterior / Open Air</option>
@@ -124,7 +192,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <select name="capacity" aria-label="Volumen / Asistentes Estimados">
+                            <label for="contact-capacity" class="sr-only">Asistentes Estimados</label>
+                            <select id="contact-capacity" name="capacity" aria-label="Volumen / Asistentes Estimados">
                                 <option value="" disabled selected>Asistentes Estimados</option>
                                 <option value="Hasta 100">Hasta 100 personas</option>
                                 <option value="100 - 300">100 a 300 personas</option>
@@ -135,7 +204,9 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea name="message" rows="4" placeholder="Detalles adicionales (equipamiento específico, horarios, rider técnico...)"
+                        <label for="contact-message" class="sr-only">Mensaje sobre tu evento</label>
+                        <textarea id="contact-message" name="message" rows="4"
+                            placeholder="Detalles adicionales (equipamiento específico, horarios, rider técnico...)"
                             aria-label="Mensaje sobre tu evento" required></textarea>
                     </div>
 
@@ -157,6 +228,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
