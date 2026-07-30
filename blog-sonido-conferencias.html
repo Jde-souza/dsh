@@ -62,6 +62,102 @@
         </a>
     </article>
 
+    <!-- Contact Section (CTA) -->
+    <section class="section contact-section" style="padding-top: 0;">
+        <div class="container contact-container">
+            <div class="contact-info fade-in-up">
+                <h2>¿Tienes un evento en mente?</h2>
+                <p>Recibe una propuesta técnica y un presupuesto a medida en menos de 24 horas.</p>
+                <div class="contact-details">
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="contact-icon">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg> <a href="mailto:contacto@dsh.uy">contacto@dsh.uy</a></p>
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="contact-icon">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg> <a href="tel:+59897777878">+598 97 777 878</a></p>
+                    <p><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="contact-icon">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg> Montevideo, Uruguay</p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper glass-card fade-in-up delay-1">
+                <form id="contact-form" action="https://formsubmit.co/ajax/aaf57433a9b9c8a7dd48d9b879d7a960"
+                    method="POST" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nombre o Productora" aria-label="Nombre completo o productora"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email corporativo / personal" aria-label="Correo electrónico" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="WhatsApp / Teléfono" aria-label="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Fecha del Evento" aria-label="Fecha del evento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select name="location_type" aria-label="Tipo de locación">
+                                <option value="" disabled selected>Tipo de Locación</option>
+                                <option value="Hotel/Salon">Hotel / Salón de Fiestas</option>
+                                <option value="Exterior">Exterior / Open Air</option>
+                                <option value="Auditorio">Teatro / Auditorio</option>
+                                <option value="Otro">Otro espacio</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="capacity" aria-label="Volumen / Asistentes Estimados">
+                                <option value="" disabled selected>Asistentes Estimados</option>
+                                <option value="Hasta 100">Hasta 100 personas</option>
+                                <option value="100 - 300">100 a 300 personas</option>
+                                <option value="300 - 500">300 a 500 personas</option>
+                                <option value="+500">Más de 500 personas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="Detalles adicionales (equipamiento específico, horarios, rider técnico...)"
+                            aria-label="Mensaje sobre tu evento" required></textarea>
+                    </div>
+
+                    <p class="form-legal-disclaimer">Tus datos están protegidos. Al solicitar este presupuesto, aceptas
+                        nuestra <a href="legal.html#privacidad">Política de Privacidad</a> y el tratamiento de tus datos
+                        bajo la Ley N° 18.331 de Uruguay.</p>
+
+                    <input type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn-submit" id="btn-submit">Obtener Presupuesto Sin Cargo</button>
+                </form>
+
+                <div id="form-success" class="form-success fade-in-up" style="display: none; text-align: center; padding: 60px 20px;" aria-live="polite">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 20px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;">¡Solicitud Recibida!</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Gracias por confiar en DSH. Nuestro equipo
+                        está evaluando tu evento y te contactaremos con una propuesta en menos de 24 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
