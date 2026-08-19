@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-dsh-dark: #0a0a0a;
+  --color-dsh-surface: #121212;
+  --color-dsh-light: #e5e7eb;
+  --color-dsh-accent: #007bff;
+  --color-dsh-orange: #f97316;
+  
+  --breakpoint-xs: 480px;
+}
+
+@layer base {
+  body {
+    @apply bg-dsh-dark text-dsh-light font-sans antialiased selection:bg-dsh-accent selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+/* Custom scrollbar for technical feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dsh-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 hover:bg-dsh-accent transition-colors rounded-full;
+}
+
+.glass-nav {
+  @apply bg-dsh-dark/80 backdrop-blur-md border-b border-white/5;
+}
+
+.tech-card {
+  @apply bg-dsh-surface border border-white/5 p-8 transition-all duration-300 hover:border-dsh-accent/50 hover:translate-y-[-4px];
+}
+
+.btn-primary {
+  @apply bg-dsh-accent text-white px-8 py-3 font-semibold transition-all hover:bg-blue-600 active:scale-95 disabled:opacity-50;
+}
+
+.btn-outline {
+  @apply border border-white/20 text-white px-8 py-3 font-semibold transition-all hover:bg-white/10 active:scale-95;
+}

@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "public/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Imagen Destacada", name: "thumbnail", widget: "image", required: false}
+      - {label: "Descripción Corta", name: "description", widget: "text"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
+      - {label: "Autor", name: "author", widget: "string", default: "DSH Team"}
+      - {label: "Categoría", name: "category", widget: "select", options: ["Entretenimiento", "Accesibilidad", "Eventos", "Tecnología", "Noticias"], default: "Entretenimiento"}
