@@ -2,8 +2,9 @@
   "name": "dsh-static-website",
   "version": "1.0.0",
   "scripts": {
+    "start": "npx -y serve . -p 4200",
     "build": "node scripts/build-blog.js",
-    "blog:dev": "npx -y concurrently \"npx decap-server\" \"npm run build -- --watch\""
+    "blog:dev": "npx -y concurrently \"npx decap-server\" \"npm run build\" \"npm start\""
   },
   "dependencies": {
     "marked": "^18.0.10"

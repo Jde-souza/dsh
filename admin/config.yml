@@ -4,8 +4,8 @@ backend:
 
 local_backend: true
 
-media_folder: "public/assets/blog"
-public_folder: "/assets/blog"
+media_folder: "asset/img/blog"
+public_folder: "asset/img/blog"
 
 collections:
   - name: "blog"
