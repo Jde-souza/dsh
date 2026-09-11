@@ -3,4 +3,4 @@
   publish = "dist/app/browser"
 
 [[plugins]]
-  package = "@netlify/plugin-angular"
+  package = "@netlify/angular-runtime"
