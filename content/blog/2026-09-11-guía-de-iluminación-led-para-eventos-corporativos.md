@@ -1,14 +1,12 @@
 ---
 title: Guía de Iluminación LED para Eventos Corporativos
 date: 2026-09-11T09:35:00.000-03:00
-description: >
-  El éxito de un evento corporativo no solo recae en la calidad de los oradores
-  o el catering, sino en la atmósfera que se genera en el espacio. El diseño
-  lumínico juega un papel crucial en cómo la audiencia percibe la marca y se
-  mantiene atenta a lo largo de las presentaciones. 
+thumbnail: /asset/img/blog/Gemini_Generated_Image_mx6lvqmx6lvqmx6l.jpg
+description: El éxito de un evento corporativo no solo recae en la calidad de los oradores o el catering, sino en la atmósfera que se genera en el espacio. El diseño lumínico juega un papel crucial en cómo la audiencia percibe la marca y se mantiene atenta a lo largo de las presentaciones.
 author: DSH Team
-category: Entretenimiento
+category: Eventos
 ---
+
 La Psicología del Color en Conferencias 
 Utilizar luminarias LED de última generación nos permite ajustar la temperatura de color de manera dinámica. Durante las presentaciones, una luz blanca fría (alrededor de 5000K) ayuda a mantener la concentración de los asistentes. Por el contrario, durante los descansos o el networking , tonos más cálidos o la integración de los colores corporativos de la empresa invitan a la relajación y la interacción. 
 
