@@ -2,7 +2,6 @@ backend:
   name: github
   repo: Jde-souza/dsh
   branch: main
-  auth_type: pkce
   app_id: Ov23lir2ydF2887hv3Y7
 
 local_backend: true
