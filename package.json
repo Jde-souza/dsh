@@ -10,6 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "prebuild": "node scripts/generate-blog-index.js",
+    "prestart": "node scripts/generate-blog-index.js",
+    "blog:dev": "npx -y concurrently \"npx decap-server\" \"ng serve\"",
     "serve:ssr:app": "node dist/app/server/server.mjs"
   },
   "private": true,
