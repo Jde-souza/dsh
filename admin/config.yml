@@ -3,7 +3,6 @@ backend:
   repo: Jde-souza/dsh
   branch: main
   app_id: Ov23lir2ydF2887hv3Y7
-  base_url: https://github.com
 
 local_backend: true
 
