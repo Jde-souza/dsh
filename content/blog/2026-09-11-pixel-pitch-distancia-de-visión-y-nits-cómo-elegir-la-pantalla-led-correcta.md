@@ -1,7 +1,7 @@
 ---
 title: 'Pixel Pitch, Distancia de Visión y Nits: Cómo elegir la pantalla LED correcta'
 date: 2026-09-11T12:55:00.000-03:00
-thumbnail: ''
+thumbnail: /asset/img/blog/Gemini_Generated_Image_iv945hiv945hiv94.jpg
 description: ¿Alguna vez has organizado un evento corporativo de alto nivel, solo para descubrir que la pantalla LED principal se veía borrosa desde las últimas filas, o peor aún, que parpadeaba incontrolablemente en la transmisión de streaming?
 author: DSH Team
 category: Entretenimiento
@@ -12,7 +12,6 @@ Para los productores de eventos y agencias creativas, la elección de la pantall
 En esta guía, desmitificamos los tres pilares técnicos esenciales (Pixel Pitch, Distancia de Visión y Nits) para que puedas contratar la pantalla LED perfecta para tu próximo evento, asegurando una resolución real y una experiencia visual impecable.
 
 1. Pixel Pitch: La Ciencia de la Densidad de Píxeles
-
 
 **Qué es:** El Pixel Pitch es la distancia en milímetros entre el centro de dos píxeles LED adyacentes. Un número menor (ej. P1.9 o P2.5) indica que los píxeles están más juntos, lo que se traduce en una mayor resolución y densidad.
 
