@@ -29,9 +29,9 @@ for (const file of files) {
         date: data.date || new Date().toISOString(),
         category: data.category || 'Blog',
         featured: !!data.featured,
-        thumbnail: data.thumbnail || 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+        thumbnail: (data.thumbnail || 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80').replace(/^\/asset\//, 'asset/'),
         excerpt: data.description || content.substring(0, 150) + '...',
-        content: marked.parse(content)
+        content: marked.parse(content).replace(/src="\/asset\//g, 'src="asset/')
     });
 }
 
