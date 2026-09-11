@@ -2,7 +2,7 @@
 title: "Rigor técnico en eventos en vivo: del cálculo de carga eléctrica al
   signal flow en escenario"
 date: 2026-09-11T00:00:00.000-03:00
-thumbnail: /assets/blog/rigor-técnico.webp
+thumbnail: /assets/blog/_8305bddf-98d2-457d-a5b3-534f3c2f7b88.jpeg
 description: El éxito de una conferencia corporativa o un show en vivo no
   depende de la potencia bruta del equipamiento, sino de la arquitectura de
   distribución eléctrica, la cobertura acústica uniforme y el control de
